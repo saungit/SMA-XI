@@ -358,6 +358,72 @@ Definition of word.
 \section{Sistem Pertidaksamaan Linear Dua Variabel}\index{Sistem Pertidaksamaan Linear Dua Variabel}
 
 \section{Nilai Optimum Fungsi Objektif}\index{Nilai Optimum Fungsi Objektif}
+\subsection{Teorema}\index{Lists!Teorema}
+Fungsi dalam pembuatan model matematika dinyatakan dalam bentuk z = ax + by. Bentuk inilah yang akan dioptimumkan baik itu minimum ataupun maksimum yang disebut sebagai fungsi objektif. Jadi, fungsi Objektif dari program linear adalah fungsi z = ax + by yang akan ditentukan nilai optimumnya.
+Ada beberapa cara untuk mencari nilai optimum (maksimum atau minimum) fungsi objektif, di antaranya yaitu:
+\begin{itemize}
+\item Metode Uji Titik Pojok
+\item Metode Garis Selidik
+\end{itemize}
+Dari kedua metode tersebut, metode yang paling mudah dan sering diterapkan adalah metode uji titik pojok.
+Metode Uji Titik Pojok adalah suatu metode dengan mensubstitusikan titik-titik pojok pada suatu daerah himpunan penyelesaian (DHP) ke fungsi objektif. Nilai maksimum berarti nilai yang paling besar yang kita ambil, begitu juga sebaliknya untuk nilai minimum kita ambil paling kecil.
+
+
+Untuk menentukan nilai optimum baik nilai minimum atau maksimum dengan metode uji titik pojok, kita bisa melakukan langkah-langkah di bawah ini:
+\begin{enumerate}
+\item Buatlah model matematikanya yang terdiri dari fungsi kendala dan fungsi tujuan.
+\item Tentukan daerah himpunan penyelesaiiannya (DHP) dan titik pojoknya.
+\item Substitusikan semua titik pojok ke fungsi tujuannya (fungsi objektifnya), dan tentukan yang diminta apakah nilai maksimum atau minimum.
+\end{enumerate}
+\begin{figure}[h]
+\centering\includegraphics[scale=0.7]{dhp}
+\caption{Daerah Hasil Penyelesaian (DHP)}
+\end{figure}
+
+Misalnya untuk gambar DHP di bawah ini kita bisa lihat bahwa titik pojok terdapat pada titik A, titik B, dan titik C.
+\subsection{Contoh Soal}
+\index{Examples!Contoh Soal}
+
+\begin{example}
+Tentukanlah nilai maksimum dan nilai minimum fungsi tujuan f(x,y) = 1500x + 1250y berdasarkan DHP berikut ini.
+\begin{figure}[h]
+\centering\includegraphics[scale=0.7]{contohsoaloptimum}
+\end{figure}
+\end{example}
+Jawab:\\
+Diketahui bahwa titik pojok yang terdapat pada gambar di atas adalah titik A,b,C dan O. Titik C belum mempunyai titik koordinat sehingga kita harus mencari terlebih dahulu dengan cara eliminasi kedua persamaan garis.\\
+Menentukan titik C:
+\begin{figure}[h]
+\centering\includegraphics[scale=0.7]{eliminasi}
+\end{figure}\\
+Substitusi x=40 ke persamaan x + y = 60\\
+x + y = 60\\
+40 + y = 60\\
+y = 20.\\
+Sehingga titik C adalah C(40,20).\\
+Substitusi semua titik pojok ke fungsi tujuan : f(x,y) = 1500x + 1250y.\\
+
+\begin{tabular}{l l}
+A(0,60) & f = 1500(0) + 1250(60) = 75000 \\
+B(56,0) & f = 1500(56) + 1250(0) = 84000 \\
+C(40,20) & f = 1500(40) + 1250(20) = 85000 \\
+D(0,0) & f = 1500(0) + 1250(0) = 0 \\
+\end{tabular}
+
+Jadi fungsi f(x,y) = 1500x + 1250y di titik C(40,20) dengan nilai maksimumnya adalah f = 85000. Sedangkan untuk titik minimum f(x,y) = 1500x + 1250y di titik C(0,0) dengan nilai minimumnya adalah f = 0.
+
+\subsection{Soal Latihan }\index{Lists!Soal Latihan}
+
+
+\begin{exercise}
+
+\begin{enumerate}
+\item Tentukan nilai maksimum f(x,y) = 3x + 4y pada himpunan penyelesaian sistem pertidaksamaan berikut: x + 2y <= 10, 4x + 3y <= 24, x >= 0, y >= 0.
+\item Tentukan nilai maksimum dan nilai minimum dari fungsi objektif z = 2x + 3y yang memenuhi x + y <= 7, x >= 0, dan y >= 0, x, y anggota R.
+\item Tentuan nilai maksimum Z = 2x + 5y dari daerah penyelesaian (daerah yang diarsir) pada gambar di bawah ini:\\
+\includegraphics[scale=0.7]{soaloptimum}
+\end{enumerate}
+\end{exercise}
 
 \section{Penerapan Program Linier Dua Variabel}\index{Penerapan Program Linier Dua Variabel}
 
