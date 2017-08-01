@@ -418,14 +418,58 @@ Jadi fungsi f(x,y) = 1500x + 1250y di titik C(40,20) dengan nilai maksimumnya ad
 \begin{exercise}
 
 \begin{enumerate}
-\item Tentukan nilai maksimum f(x,y) = 3x + 4y pada himpunan penyelesaian sistem pertidaksamaan berikut: x + 2y <= 10, 4x + 3y <= 24, x >= 0, y >= 0.
-\item Tentukan nilai maksimum dan nilai minimum dari fungsi objektif z = 2x + 3y yang memenuhi x + y <= 7, x >= 0, dan y >= 0, x, y anggota R.
+\item Tentukan nilai maksimum f(x,y) = 3x + 4y pada himpunan penyelesaian sistem pertidaksamaan berikut: $x + 2y \le 10, 4x + 3y \le 24, x \ge 0, y \ge 0.$
+\item Tentukan nilai maksimum dan nilai minimum dari fungsi objektif z = 2x + 3y yang memenuhi $x + y \le 7, x \ge 0$, dan $y \ge 0, x,y \in R.$
 \item Tentuan nilai maksimum Z = 2x + 5y dari daerah penyelesaian (daerah yang diarsir) pada gambar di bawah ini:\\
 \includegraphics[scale=0.7]{soaloptimum}
 \end{enumerate}
 \end{exercise}
 
 \section{Penerapan Program Linier Dua Variabel}\index{Penerapan Program Linier Dua Variabel}
+Program linear banyak digunakan dalam kehidupan sehari-hari, misalnya dalam bidang ekonomi, perdagangan, dan pertanian.\\
+
+Misalkan dalam bidang perdagangan atau pengusaha, para pedagang atau pengusaha tentu ingin memperoleh keuntungan maksimum. Sebelum melakukan transaksi ataupun pengambilan keputusan dalam usahanya, mereka pasti membuat perhitungan yang matang tentang langkah apa yang harus dilakukan. Oleh karena itu, diperlukan metode yang tepat dalam pengambilan keputusan pedagang atau pengusaha tersebut untuk memperoleh keuntungan maksimum dan meminimumkan kerugian yang mungkin terjadi.\\
+
+Seperti yang telah disinggungkan pada section sebelumnya, ada beberapa metode untuk menyelesaikan masalah program linear dua variabel, di antaranya yang kita bahas adalah metode uji titik pojok. Nah untuk contoh soal yang diambil dari kehidupan sehari-hari sebagai berikut:\\
+\\
+\begin{example}
+Ling ling membeli 240 ton beras untuk dijual lagi. Ia menyewa dua jenis truk untuk mengangkut beras tersebut. Truk jenis A memiliki kapasitas 6 ton dan truk jenis B memiliki kapasitas 4 ton. Sewa tiap truk jenis A adalah Rp 100.000,00 sekali jalan dan truk jenis B adalah Rp 50.000,00 sekali jalan. Maka Ling ling menyewa truk itu sekurang-kurangnya 48 buah. Berapa banyak jenis truk A dan B yang harus disewa agar biaya yang
+dikeluarkan minimum?
+\end{example}
+Jawab:\\
+Untuk menyelesaikan masalah ini kita akan menggunakan metode uji titik sudut yang telah kita pelajari pada section nilai optimum fungsi objektif.\\
+Dari soal di atas dapat diperoleh bahwa:
+\begin{figure}[h]
+\centering\includegraphics[scale=0.7]{jawab1}
+\end{figure}\\
+Dan ketika kita ubah ke model matematika akan seperti berikut:\\
+$x + y \ge 48,$\\
+$6x + 4y \ge 240,$\\
+$x \ge 0, y \ge 0,$ x, y anggota bilangan cacah\\
+\\
+Dengan fungsi objektifnya yaitu  f(x, y) = 100.000x + 50.000y.\\
+\begin{figure}[h]
+\centering\includegraphics[scale=0.6]{jawab2}
+\end{figure}\\
+Dari gambar di atas dapat kita ketahui bahwa titik  pojok dari daerah penyelesaian di atas adalah titik potong garis 6x + 4y = 240 dengan sumbu-y, titik potong garis x + y = 48 dengan sumbu-x, dan titik potong garis-garis x + y = 48 dan 6x + 4y = 240.\\
+Titik potong garis 6x + 4y = 240 dengan sumbu-y adalah titik (0, 60). Titik potong garis x + y = 48 dengan sumbu-x adalah titik (48, 0). Sedangkan titik potong garis-garis x + y = 48 dan 6x + 4y = 240 dapat dicari dengan menggunakan cara eliminasi berikut ini.\\
+\begin{figure}[h]
+\centering\includegraphics[scale=0.7]{jawab3}
+\end{figure}\\
+
+Substitusi semua titik pojok ke fungsi tujuan : f(x,y) = 100000x + 50000y.\\
+
+\begin{tabular}{l l}
+A(0,60) & f = 1500(0) + 1250(60) = 3000000 \\
+B(48,0) & f = 1500(48) + 1250(0) = 4800000 \\
+C(24,24) & f = 1500(24) + 1250(24) = 3600000 \\
+D(0,0) & f = 1500(0) + 1250(0) = 0 \\
+\end{tabular}
+
+
+Jadi Dari ketiga hasil tersebut, dapat diperoleh bahwa agar biaya yang dikeluarkan minimum, Ling ling harus menyewa 60 truk jenis B dan tidak menyewa truk jenis A.\\
+
+
 
 %----------------------------------------------------------------------------------------
 %	CHAPTER 5
