@@ -430,6 +430,18 @@ Program linear banyak digunakan dalam kehidupan sehari-hari, misalnya dalam bida
 
 Misalkan dalam bidang perdagangan atau pengusaha, para pedagang atau pengusaha tentu ingin memperoleh keuntungan maksimum. Sebelum melakukan transaksi ataupun pengambilan keputusan dalam usahanya, mereka pasti membuat perhitungan yang matang tentang langkah apa yang harus dilakukan. Oleh karena itu, diperlukan metode yang tepat dalam pengambilan keputusan pedagang atau pengusaha tersebut untuk memperoleh keuntungan maksimum dan meminimumkan kerugian yang mungkin terjadi.\\
 
+Adapun untuk contoh penerapan lain misalkan sebagai berikut:
+\begin{itemize}
+\item Penerapan dalam Dunia Kerja\\
+Dalam dunia kerja, matematika telah digunakan sebagai salah satu alat penyaring atau seleksi bagi orang untuk memperoleh pekerjaan yang lebih baik dengan gaji yang lebih tinggi. Juga tidak sedikit yang melibatkan penggunaan matematika atau proses berpikir matematis, misalnya melakukan jual-beli, mengukur luas tanah pekarangan, areal sawah, menimbang beras,gula, dan sembako lainnya, menghitung pengeluaran kebutuhan rumah tangga, menghitung biaya pembayaran rekening listrik dan PDAM, membayar hutang, dan sebagainya.
+
+\item Penerapan dalam Dunia Rumah Tangga\\
+Suatu saat ketika anda sudah menjadi seorang ibu rumah tangga, yang mengharuskan anda untuk terampil dalam mengelola keuangan rumah tangga, maka anda tidak akan lepas dari penggunaan ilmu matematika terutam bab aljabar. Mulai dari menganalisa pemasukan, mengatur pengeluaran untuk kebutuhan rumah tangga, uang saku anak, tabungan, sampai ke asuransi kesehatan.
+
+\item Penerapan dalam Bidang Perdagangan\\
+Dalam hal perdagangan, ambilah contoh yang paling sederhana, menjual buah-buahan, anda akan dituntut untuk punya kemampuan menganalisis laba rugi, berapa jumlah biaya yang harus dikeluarkan untuk "kulakan", berapa laba tiap kilogram buah dan buah apa saja yang memberi keuntungan maksimum. semua itu sedikit banyak akan menggunakan ilmu matematika khususnya program linier.
+\end{itemize}
+ 
 Seperti yang telah disinggungkan pada section sebelumnya, ada beberapa metode untuk menyelesaikan masalah program linear dua variabel, di antaranya yang kita bahas adalah metode uji titik pojok. Nah untuk contoh soal yang diambil dari kehidupan sehari-hari sebagai berikut:\\
 \\
 \begin{example}
@@ -469,7 +481,74 @@ D(0,0) & f = 1500(0) + 1250(0) = 0 \\
 
 Jadi Dari ketiga hasil tersebut, dapat diperoleh bahwa agar biaya yang dikeluarkan minimum, Ling ling harus menyewa 60 truk jenis B dan tidak menyewa truk jenis A.\\
 
+\begin{example}
+Seorang pedagang menjual buah mangga dan pisang dengan menggunaknan gerobak. Pedagang tersebut membeli magga dengan harga Rp.8.000,00/kg dan pisang Rp.6000,00/kg. Modal yang tersedia Rp. 1.200.000,00 dan gerobaknya hanya dapat menampung mangga dan pisang sebanyak 180 kg. jika harga jual mangga Rp.9.200,00/kg dan pisang Rp.7000,00/kg, maka tentukanlah laba maksimum yang diperoleh pedagang tersebut!\\
+\end{example}
 
+Jawab:\\
+Karena ditanya laba maksimum, maka fungsi tujuan/fungsi objektifnya adalah keuntungan dari menjual buah mangga dan buah pisang perkilonya.\\
+Berikut untuk penjualan:\\
+mangga = 9200 - 8000 = 1200\\
+pisang = 7000 - 6000 = 1000\\
+
+misalkan:\\
+mangga = x\\
+pisang = y\\
+
+maka fungsi objektifnya adalah:\\
+f(x,y)=1200x + 1000y\\
+
+Model matematika atau sistem pertidaksamaan yang memenuhi soal tersebut adalah:\\
+x + y <= 180\\
+8000x + 6000y <= 1200000 --> 4x + 3y <=600\\
+x>=0\\
+y>=0\\
+
+Titik potong masing-masing garis terhadap sumbu x dan sumbuy:\\
+Garis x + y = 180\\
+untuk x = 0, y = 180 --> (0,180)\\
+untuk y = 0, x = 180 --> (180,0)\\
+
+Garis 4x + 3y = 600\\
+untuk x = 0, y = 200 --> (0,200)\\
+untuk y = 0, x = 150 --> (150,0)\\
+
+Himpunan penyelesaian sistem pertidaksamaan adalah:\\
+\begin{figure}[h]
+\centering\includegraphics[scale=0.99]{jawabA}
+\end{figure}\\
+Dari grafik diketahui ada tiga titik pojok yaitu A, B dan C. Titik C merupakan perpotongan antara garis x + y = 180 dengan 4x + 3y = 600.\\
+x  +  y = 180 | x3 | 3x + 3y = 540\\
+4x + 3y = 600 | x1 | 4x + 3y = 600 dikurangi.\\
+maka -x = -60 maka x = 60.\\
+
+Maka x tersebut dimasukan ke dalam persamaan x + y = 180.\\
+
+x + y = 180\\
+y = 180-60\\
+y = 120\\
+
+Kemudian substitusikan titik pojok pada fungsi objektif f(x,y) 1200x + 1000y:\\
+\begin{tabular}{l l}
+A(0,180) & f = 1000(180) = 180000 \\
+B(60,120) & f = 1200(60) + 1000(120) = 192000 \\
+C(150,0) & f = 1200(150)= 180000 \\
+D(0,0) & f = 1500(0) + 1250(0) = 0 \\
+\end{tabular}
+
+Jadi laba maksimum yang diperoleh pedagang buah adalah Rp.192.000,00
+
+
+\subsection{Soal Latihan Penerapan Program Linear Dua Variabel}\index{Lists!Soal Latihan Penerapan Program Linear Dua Variabel}
+
+
+\begin{exercise}
+
+\begin{enumerate}
+\item Seorang pembuat kue mempunyai 8 kg tepung dan 2 kg gula pasir. Ia ingin membuat dua macam kue yaitu kue dadar dan kue apem. Untuk membuat kue dadar dibutuhkan 10gram gula pasir dan 20 gram tepung sedangkan untuk membuat sebuahkue apem dibutuhkan 5 gram gula pasir dan 50 gram tepung. Jika kue dadar dijual dengan harga Rp.300,00/buah dan kue apem dijual dengan harga Rp. 500,00/buah, tentukanlah pendapatan maksimum yang dapat diperoleh pembuat kue tersebut!
+\item Menjelang hari raya Idul Adha, Pak Mahmud hendak menjual sapi dan kerbau. Harga seekor sapi dan kerbau di Medan berturut-turut Rp.9.000.000,00 dan Rp.8.000.000,00. Modal yang dimiliki pak Mahmud adalah Rp.124.000.000,00. Pak Mahmud menjual sapi dan kerbau di Aceh dengan harga berturut-turut Rp.10.300.000,00 dan Rp.9.200.000,00. Kandang yang ia miliki hanya dapat menampung tidak lebih dari 15 ekor. Agar mencapai keuntungan maksimum, tentukanlah banyak sapi dan kerbau yang harus dibeli pak Mahmud!
+\end{enumerate}
+\end{exercise}
 
 %----------------------------------------------------------------------------------------
 %	CHAPTER 5
