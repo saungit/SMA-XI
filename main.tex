@@ -358,8 +358,197 @@ Definition of word.
 \section{Sistem Pertidaksamaan Linear Dua Variabel}\index{Sistem Pertidaksamaan Linear Dua Variabel}
 
 \section{Nilai Optimum Fungsi Objektif}\index{Nilai Optimum Fungsi Objektif}
+\subsection{Teorema}\index{Lists!Teorema}
+Fungsi dalam pembuatan model matematika dinyatakan dalam bentuk z = ax + by. Bentuk inilah yang akan dioptimumkan baik itu minimum ataupun maksimum yang disebut sebagai fungsi objektif. Jadi, fungsi Objektif dari program linear adalah fungsi z = ax + by yang akan ditentukan nilai optimumnya.
+Ada beberapa cara untuk mencari nilai optimum (maksimum atau minimum) fungsi objektif, di antaranya yaitu:
+\begin{itemize}
+\item Metode Uji Titik Pojok
+\item Metode Garis Selidik
+\end{itemize}
+Dari kedua metode tersebut, metode yang paling mudah dan sering diterapkan adalah metode uji titik pojok.
+Metode Uji Titik Pojok adalah suatu metode dengan mensubstitusikan titik-titik pojok pada suatu daerah himpunan penyelesaian (DHP) ke fungsi objektif. Nilai maksimum berarti nilai yang paling besar yang kita ambil, begitu juga sebaliknya untuk nilai minimum kita ambil paling kecil.
+
+
+Untuk menentukan nilai optimum baik nilai minimum atau maksimum dengan metode uji titik pojok, kita bisa melakukan langkah-langkah di bawah ini:
+\begin{enumerate}
+\item Buatlah model matematikanya yang terdiri dari fungsi kendala dan fungsi tujuan.
+\item Tentukan daerah himpunan penyelesaiiannya (DHP) dan titik pojoknya.
+\item Substitusikan semua titik pojok ke fungsi tujuannya (fungsi objektifnya), dan tentukan yang diminta apakah nilai maksimum atau minimum.
+\end{enumerate}
+\begin{figure}[h]
+\centering\includegraphics[scale=0.7]{dhp}
+\caption{Daerah Hasil Penyelesaian (DHP)}
+\end{figure}
+
+Misalnya untuk gambar DHP di bawah ini kita bisa lihat bahwa titik pojok terdapat pada titik A, titik B, dan titik C.
+\subsection{Contoh Soal}
+\index{Examples!Contoh Soal}
+
+\begin{example}
+Tentukanlah nilai maksimum dan nilai minimum fungsi tujuan f(x,y) = 1500x + 1250y berdasarkan DHP berikut ini.
+\begin{figure}[h]
+\centering\includegraphics[scale=0.7]{contohsoaloptimum}
+\end{figure}
+\end{example}
+Jawab:\\
+Diketahui bahwa titik pojok yang terdapat pada gambar di atas adalah titik A,b,C dan O. Titik C belum mempunyai titik koordinat sehingga kita harus mencari terlebih dahulu dengan cara eliminasi kedua persamaan garis.\\
+Menentukan titik C:
+\begin{figure}[h]
+\centering\includegraphics[scale=0.7]{eliminasi}
+\end{figure}\\
+Substitusi x=40 ke persamaan x + y = 60\\
+x + y = 60\\
+40 + y = 60\\
+y = 20.\\
+Sehingga titik C adalah C(40,20).\\
+Substitusi semua titik pojok ke fungsi tujuan : f(x,y) = 1500x + 1250y.\\
+
+\begin{tabular}{l l}
+A(0,60) & f = 1500(0) + 1250(60) = 75000 \\
+B(56,0) & f = 1500(56) + 1250(0) = 84000 \\
+C(40,20) & f = 1500(40) + 1250(20) = 85000 \\
+D(0,0) & f = 1500(0) + 1250(0) = 0 \\
+\end{tabular}
+
+Jadi fungsi f(x,y) = 1500x + 1250y di titik C(40,20) dengan nilai maksimumnya adalah f = 85000. Sedangkan untuk titik minimum f(x,y) = 1500x + 1250y di titik C(0,0) dengan nilai minimumnya adalah f = 0.
+
+\subsection{Soal Latihan }\index{Lists!Soal Latihan}
+
+
+\begin{exercise}
+
+\begin{enumerate}
+\item Tentukan nilai maksimum f(x,y) = 3x + 4y pada himpunan penyelesaian sistem pertidaksamaan berikut: $x + 2y \le 10, 4x + 3y \le 24, x \ge 0, y \ge 0.$
+\item Tentukan nilai maksimum dan nilai minimum dari fungsi objektif z = 2x + 3y yang memenuhi $x + y \le 7, x \ge 0$, dan $y \ge 0, x,y \in R.$
+\item Tentuan nilai maksimum Z = 2x + 5y dari daerah penyelesaian (daerah yang diarsir) pada gambar di bawah ini:\\
+\includegraphics[scale=0.7]{soaloptimum}
+\end{enumerate}
+\end{exercise}
 
 \section{Penerapan Program Linier Dua Variabel}\index{Penerapan Program Linier Dua Variabel}
+Program linear banyak digunakan dalam kehidupan sehari-hari, misalnya dalam bidang ekonomi, perdagangan, dan pertanian.\\
+
+Misalkan dalam bidang perdagangan atau pengusaha, para pedagang atau pengusaha tentu ingin memperoleh keuntungan maksimum. Sebelum melakukan transaksi ataupun pengambilan keputusan dalam usahanya, mereka pasti membuat perhitungan yang matang tentang langkah apa yang harus dilakukan. Oleh karena itu, diperlukan metode yang tepat dalam pengambilan keputusan pedagang atau pengusaha tersebut untuk memperoleh keuntungan maksimum dan meminimumkan kerugian yang mungkin terjadi.\\
+
+Adapun untuk contoh penerapan lain misalkan sebagai berikut:
+\begin{itemize}
+\item Penerapan dalam Dunia Kerja\\
+Dalam dunia kerja, matematika telah digunakan sebagai salah satu alat penyaring atau seleksi bagi orang untuk memperoleh pekerjaan yang lebih baik dengan gaji yang lebih tinggi. Juga tidak sedikit yang melibatkan penggunaan matematika atau proses berpikir matematis, misalnya melakukan jual-beli, mengukur luas tanah pekarangan, areal sawah, menimbang beras,gula, dan sembako lainnya, menghitung pengeluaran kebutuhan rumah tangga, menghitung biaya pembayaran rekening listrik dan PDAM, membayar hutang, dan sebagainya.
+
+\item Penerapan dalam Dunia Rumah Tangga\\
+Suatu saat ketika anda sudah menjadi seorang ibu rumah tangga, yang mengharuskan anda untuk terampil dalam mengelola keuangan rumah tangga, maka anda tidak akan lepas dari penggunaan ilmu matematika terutam bab aljabar. Mulai dari menganalisa pemasukan, mengatur pengeluaran untuk kebutuhan rumah tangga, uang saku anak, tabungan, sampai ke asuransi kesehatan.
+
+\item Penerapan dalam Bidang Perdagangan\\
+Dalam hal perdagangan, ambilah contoh yang paling sederhana, menjual buah-buahan, anda akan dituntut untuk punya kemampuan menganalisis laba rugi, berapa jumlah biaya yang harus dikeluarkan untuk "kulakan", berapa laba tiap kilogram buah dan buah apa saja yang memberi keuntungan maksimum. semua itu sedikit banyak akan menggunakan ilmu matematika khususnya program linier.
+\end{itemize}
+ 
+Seperti yang telah disinggungkan pada section sebelumnya, ada beberapa metode untuk menyelesaikan masalah program linear dua variabel, di antaranya yang kita bahas adalah metode uji titik pojok. Nah untuk contoh soal yang diambil dari kehidupan sehari-hari sebagai berikut:\\
+\\
+\begin{example}
+Ling ling membeli 240 ton beras untuk dijual lagi. Ia menyewa dua jenis truk untuk mengangkut beras tersebut. Truk jenis A memiliki kapasitas 6 ton dan truk jenis B memiliki kapasitas 4 ton. Sewa tiap truk jenis A adalah Rp 100.000,00 sekali jalan dan truk jenis B adalah Rp 50.000,00 sekali jalan. Maka Ling ling menyewa truk itu sekurang-kurangnya 48 buah. Berapa banyak jenis truk A dan B yang harus disewa agar biaya yang
+dikeluarkan minimum?
+\end{example}
+Jawab:\\
+Untuk menyelesaikan masalah ini kita akan menggunakan metode uji titik sudut yang telah kita pelajari pada section nilai optimum fungsi objektif.\\
+Dari soal di atas dapat diperoleh bahwa:
+\begin{figure}[h]
+\centering\includegraphics[scale=0.7]{jawab1}
+\end{figure}\\
+Dan ketika kita ubah ke model matematika akan seperti berikut:\\
+$x + y \ge 48,$\\
+$6x + 4y \ge 240,$\\
+$x \ge 0, y \ge 0,$ x, y anggota bilangan cacah\\
+\\
+Dengan fungsi objektifnya yaitu  f(x, y) = 100.000x + 50.000y.\\
+\begin{figure}[h]
+\centering\includegraphics[scale=0.6]{jawab2}
+\end{figure}\\
+Dari gambar di atas dapat kita ketahui bahwa titik  pojok dari daerah penyelesaian di atas adalah titik potong garis 6x + 4y = 240 dengan sumbu-y, titik potong garis x + y = 48 dengan sumbu-x, dan titik potong garis-garis x + y = 48 dan 6x + 4y = 240.\\
+Titik potong garis 6x + 4y = 240 dengan sumbu-y adalah titik (0, 60). Titik potong garis x + y = 48 dengan sumbu-x adalah titik (48, 0). Sedangkan titik potong garis-garis x + y = 48 dan 6x + 4y = 240 dapat dicari dengan menggunakan cara eliminasi berikut ini.\\
+\begin{figure}[h]
+\centering\includegraphics[scale=0.7]{jawab3}
+\end{figure}\\
+
+Substitusi semua titik pojok ke fungsi tujuan : f(x,y) = 100000x + 50000y.\\
+
+\begin{tabular}{l l}
+A(0,60) & f = 1500(0) + 1250(60) = 3000000 \\
+B(48,0) & f = 1500(48) + 1250(0) = 4800000 \\
+C(24,24) & f = 1500(24) + 1250(24) = 3600000 \\
+D(0,0) & f = 1500(0) + 1250(0) = 0 \\
+\end{tabular}
+
+
+Jadi Dari ketiga hasil tersebut, dapat diperoleh bahwa agar biaya yang dikeluarkan minimum, Ling ling harus menyewa 60 truk jenis B dan tidak menyewa truk jenis A.\\
+
+\begin{example}
+Seorang pedagang menjual buah mangga dan pisang dengan menggunaknan gerobak. Pedagang tersebut membeli magga dengan harga Rp.8.000,00/kg dan pisang Rp.6000,00/kg. Modal yang tersedia Rp. 1.200.000,00 dan gerobaknya hanya dapat menampung mangga dan pisang sebanyak 180 kg. jika harga jual mangga Rp.9.200,00/kg dan pisang Rp.7000,00/kg, maka tentukanlah laba maksimum yang diperoleh pedagang tersebut!\\
+\end{example}
+
+Jawab:\\
+Karena ditanya laba maksimum, maka fungsi tujuan/fungsi objektifnya adalah keuntungan dari menjual buah mangga dan buah pisang perkilonya.\\
+Berikut untuk penjualan:\\
+mangga = 9200 - 8000 = 1200\\
+pisang = 7000 - 6000 = 1000\\
+
+misalkan:\\
+mangga = x\\
+pisang = y\\
+
+maka fungsi objektifnya adalah:\\
+f(x,y)=1200x + 1000y\\
+
+Model matematika atau sistem pertidaksamaan yang memenuhi soal tersebut adalah:\\
+x + y <= 180\\
+8000x + 6000y <= 1200000 --> 4x + 3y <=600\\
+x>=0\\
+y>=0\\
+
+Titik potong masing-masing garis terhadap sumbu x dan sumbuy:\\
+Garis x + y = 180\\
+untuk x = 0, y = 180 --> (0,180)\\
+untuk y = 0, x = 180 --> (180,0)\\
+
+Garis 4x + 3y = 600\\
+untuk x = 0, y = 200 --> (0,200)\\
+untuk y = 0, x = 150 --> (150,0)\\
+
+Himpunan penyelesaian sistem pertidaksamaan adalah:\\
+\begin{figure}[h]
+\centering\includegraphics[scale=0.99]{jawabA}
+\end{figure}\\
+Dari grafik diketahui ada tiga titik pojok yaitu A, B dan C. Titik C merupakan perpotongan antara garis x + y = 180 dengan 4x + 3y = 600.\\
+x  +  y = 180 | x3 | 3x + 3y = 540\\
+4x + 3y = 600 | x1 | 4x + 3y = 600 dikurangi.\\
+maka -x = -60 maka x = 60.\\
+
+Maka x tersebut dimasukan ke dalam persamaan x + y = 180.\\
+
+x + y = 180\\
+y = 180-60\\
+y = 120\\
+
+Kemudian substitusikan titik pojok pada fungsi objektif f(x,y) 1200x + 1000y:\\
+\begin{tabular}{l l}
+A(0,180) & f = 1000(180) = 180000 \\
+B(60,120) & f = 1200(60) + 1000(120) = 192000 \\
+C(150,0) & f = 1200(150)= 180000 \\
+D(0,0) & f = 1500(0) + 1250(0) = 0 \\
+\end{tabular}
+
+Jadi laba maksimum yang diperoleh pedagang buah adalah Rp.192.000,00
+
+
+\subsection{Soal Latihan Penerapan Program Linear Dua Variabel}\index{Lists!Soal Latihan Penerapan Program Linear Dua Variabel}
+
+
+\begin{exercise}
+
+\begin{enumerate}
+\item Seorang pembuat kue mempunyai 8 kg tepung dan 2 kg gula pasir. Ia ingin membuat dua macam kue yaitu kue dadar dan kue apem. Untuk membuat kue dadar dibutuhkan 10gram gula pasir dan 20 gram tepung sedangkan untuk membuat sebuahkue apem dibutuhkan 5 gram gula pasir dan 50 gram tepung. Jika kue dadar dijual dengan harga Rp.300,00/buah dan kue apem dijual dengan harga Rp. 500,00/buah, tentukanlah pendapatan maksimum yang dapat diperoleh pembuat kue tersebut!
+\item Menjelang hari raya Idul Adha, Pak Mahmud hendak menjual sapi dan kerbau. Harga seekor sapi dan kerbau di Medan berturut-turut Rp.9.000.000,00 dan Rp.8.000.000,00. Modal yang dimiliki pak Mahmud adalah Rp.124.000.000,00. Pak Mahmud menjual sapi dan kerbau di Aceh dengan harga berturut-turut Rp.10.300.000,00 dan Rp.9.200.000,00. Kandang yang ia miliki hanya dapat menampung tidak lebih dari 15 ekor. Agar mencapai keuntungan maksimum, tentukanlah banyak sapi dan kerbau yang harus dibeli pak Mahmud!
+\end{enumerate}
+\end{exercise}
 
 %----------------------------------------------------------------------------------------
 %	CHAPTER 5
@@ -377,6 +566,315 @@ Definition of word.
 
 \section{Pemakaian Matriks Pada Pransformasi Geometri}\index{Pemakaian Matriks Pada Pransformasi Geometri}
 
+\begin{center}
+\LARGE \textbf{Pemakaian Matriks pada Transformasi Geometri}
+\end{center}
+
+\begin{enumerate}
+\item \textbf{Apa itu Transformasi Geometri?}
+
+\begin{enumerate}
+\item \textbf{ Pengertian Transformasi Geometri?}
+\end{enumerate}
+\end{enumerate}
+
+\noindent 
+ Pengertian transformasi geometri adalah proses mengubah setiap titik koordinat menjadi titik koordinat lain pada bidang tertentu. Transformasi bisa juga dilakukan pada kumpulan titik yang membentuk bidang/bangun tertentu. Jika sobat punya sebuah titik A (x,y) kemudian ditransformasikan oleh transformasi T maka akan menghasilkan titik yang baru A’ (x’,y’). Secara matematis di tulis:
+
+\noindent 
+\noindent 
+\noindent 
+\begin{center}
+\includegraphics{Pictures/1.PNG}\\
+\end{center}
+
+\begin{enumerate}
+	\item \textbf{Jenis-Jenis Transformasi Geometri}
+\end{enumerate}
+
+\noindent 
+Sebuah objek dapat diubah dengan melakukan berbagai perlakuan. Di dalam transformasi geometri dikenal adanya 4 jenis transformasi yang bisa dilakukan terdapat sebuah koordinat yaitu menggesernya, mencerminkannya, memutar, memperbesar, atau mengecilkan. Selain 4 transformasi tersebut masih ada yang namanya regangan dan gusuran. Yuk lihat ulasannya satu persatu di bawah ini.
+
+\noindent 
+\begin{center}
+	\noindent \includegraphics*[width=2.32in, height=1.48in, keepaspectratio=false, trim=0.00in 0.11in 0.00in 0.00in]{Pictures/2.PNG}
+\end{center}
+\noindent 
+\noindent \textbf{a. Translasi (Pergeseran)}
+\noindent 
+Translasi atau pergeseran adalah transformasi yang memindahkan setiap titik pada bidang menurut jarak dan arah tertentu. Sobat bisa mengatakan kalau translasi hanya memindahkan tanpa mengubah ukuran tanpa memutar. Kata kuncinya transformasik ke arah yang sama dan ke jarak yang sama. Misalkan sobat punya sebuah titik T (x,y)  yang ditranslasikan menurut (a,b) maka hasil setelah transfromasi  adalah:
+
+\noindent 
+\begin{center}
+\includegraphics{Pictures/3.PNG}\\
+\end{center}
+
+\noindent (x’,y’) = (x+a, y+b)
+\noindent 
+
+\noindent Relasi antara anggota himpunan A ke himpunan B yang mungkin adalah menyukasi atau menyenangi.
+
+\noindent Dari contoh di atas, himpunan A tersebut domain (daerah asal) dan himpunan B disebut daerah tujuan (ko-domain) . Sementara itu menyukasi disebut relasi. Himpunan semua anggota ko-domain di sebut range (daerah hasil).
+
+\noindent 
+
+\noindent \textbf{b. Refleksi}
+
+\noindent 
+
+Refleksi atau sering disebut dengan istilah pencerminan adalah suatu transformasi dengan memindahkan setiap titik pada bidang dengan menggunakan sifat-sifat pencerminan pada cermin datar. Berikut tabel transformasi pencerminan:
+
+
+\begin{center}
+	\noindent \includegraphics*[width=2.32in, height=1.48in, keepaspectratio=false, trim=0.00in 0.11in 0.00in 0.00in]{Pictures/4.PNG}
+\end{center}
+
+\newpage
+\noindent \textbf{c. rotasi}
+
+\begin{center}
+	\noindent \includegraphics*[width=2.32in, height=1.48in, keepaspectratio=false, trim=0.00in 0.11in 0.00in 0.00in]{Pictures/5.PNG}
+\end{center}
+\noindent 
+Rotasi adalah memutar setiap titik pada bidang dengan menggunakan titik pusat tertentuk yang memiliki jarak sama dengan setiap titik yang diputar (jari-jari). Rotasi tidak mengubah ukuran benda sama sekali. Ada dua macam rotasi, rotasi dengan titik pusat (0,0) dan rotasi dengan titik tertentu P (a,b).
+
+\noindent \textbf{1. Rotasi dengan Titik Pusat (0,0) dengan Sudut Putar $\alpha$}
+\begin{center}
+\includegraphics{Pictures/6.PNG}\\
+\end{center}
+
+\noindent
+dimana
+
+\noindent x’ = x cos $\alpha$ – y sin
+\noindent y’ = x sin $\alpha$ + y cos $\alpha$
+
+atau jika dibuat matriks transformasinya menjadi
+
+\noindent
+\begin{center}
+\includegraphics{Pictures/7.PNG}\\
+\end{center}
+
+\noindent
+keterangan
+
+\noindent $\alpha$  bernilai + jika arah putaran berlawanan dengan arah jarum jam
+\noindent $\alpha$ bernilai – jika araha putaran searah dengan arah jarum jam
+
+
+\noindent \textbf{2.Rotasi dengan Titik Pusat (a,b) dengan Sudut Putar $\alpha$}
+
+\noindent
+Jika sobat punya sebuah titik (x,y) yang diputar sebesar $\alpha$ derajat dengant titik pusat P (a,b) maka:
+\noindent
+\begin{center}
+\includegraphics{Pictures/8.PNG}\\
+\end{center}
+
+
+\noindent
+dimana
+\noindent x’ – a = (x-a) cos $\alpha$ – (y-b) sin $\alpha$
+\noindent y’ – b = (x-a) sin $\alpha$  + (y-b) cos $\alpha$
+
+\noindent \textbf{d. Dilatasi (Perkalian)}
+
+\noindent
+\begin{center}
+	\noindent \includegraphics*[width=2.32in, height=1.48in, keepaspectratio=false, trim=0.00in 0.11in 0.00in 0.00in]{Pictures/9.PNG}
+\end{center}
+
+\noindent
+Selain dipindah, dicerminkan, dan diputar, transformasi juga bisa berbentuk pembesaran atau pengecilan yang disebut dilatasi. Faktor yang menyebabkan diperbesar atau diperkecilnya suatu bangun dinamakan faktor dilatasi. Faktor dilatis dilambangkan dengan k dimana
+
+
+\noindent Jika k > 1 atau k <-1 maka diperbesar
+\noindent Jika -1 < k < 1 maka diperkecil
+\noindent Jika k = 1 atau k = -1 maka bangun tidak mengalami perubahan ukuran
+
+\noindent 1. Dilatasi terhadap titik pusat O (0,0)Dilatasi dengan pusat O (0,0) dan faktor dilatasi K maka
+\noindent
+\begin{center}
+\includegraphics{Pictures/10.PNG}\\
+\end{center}
+
+\noindent
+\begin{center}
+\includegraphics{Pictures/11.PNG}\\
+\end{center}
+
+\noindent
+2. Dilatasi terhadap titik pusat P (a,b)Jika sebuah titik didilatasi dengan faktor dilatasi k dan titik pust P (a,b) maka
+\noindent
+\begin{center}
+\includegraphics{Pictures/12.PNG}\\
+\end{center}
+
+\noindent
+\begin{center}
+\includegraphics{Pictures/13.PNG}\\
+\end{center}
+
+\noindent
+\noindent dimana
+\noindent x’-a = k (x-a)
+\noindent y’-b = k (y-b)
+
+\noindent \textbf{e. Gusuran (Shearing)}
+\noindent Gusuran artinya menggeser serah sumbu x atau sumbu y dengan faktor skala tertentu. Coba sobat perhatikan gambar di bawah ini:
+
+\noindent
+\begin{center}
+	\noindent \includegraphics*[width=2.32in, height=1.48in, keepaspectratio=false, trim=0.00in 0.11in 0.00in 0.00in]{Pictures/14.PNG}
+\end{center}
+\noindent 
+Segi empat di atas dapat di gusur menurut sumbu x atau sumbu y dengan skala gusur k
+
+\noindent
+\noindent Untuk gusuran menurut sumbu x —> Jika nilai k positif maka ke kanan, k negatif maka ke kiri
+\noindent Untuk gusuran menurut sumbu y —> Jika nilai k positif maka ke atas, k kengatif maka k bawah
+
+\noindent
+Dari penjelasan di atas maka dapat disimpulkan rumus:
+\noindent
+\begin{center}
+\includegraphics{Pictures/15.PNG}\\
+\end{center}
+\noindent \textbf{e. Gusuran (Shearing)}
+\noindent
+\begin{center}
+	\noindent \includegraphics*[width=2.32in, height=1.48in, keepaspectratio=false, trim=0.00in 0.11in 0.00in 0.00in]{Pictures/16.PNG}
+\end{center}
+
+\noindent
+Regangan atau dalam bahasa inggris disebut streching  artinya transformasi dengan menarik sebuah benda searah sumbu x atau sumbu y dengan skala tertentu. Jika sobat punya sebuah titik (x,y) yang ditari ke arah sumbu x atau y dengan skala k maka hasil pemetaannya dapat dicari dengan rumus
+\noindent
+\begin{center}
+	\noindent \includegraphics*[width=2.32in, height=1.48in, keepaspectratio=false, trim=0.00in 0.11in 0.00in 0.00in]{Pictures/17.PNG}
+\end{center}
+
+\noindent
+
+\begin{enumerate}
+	\item  \textbf{Komposisi Transformasi}
+\end{enumerate}
+\noindent
+Komposisi transformasi adalah gabungan dari dua atau lebih transformasi baik berbeda ataupun sama.  Misalkan sebuah titik di transformasikan 2 kali oleh T1 dan T2 maka secara matematis dituliskan T1o T2 dengan matriks komposisi tersebut adalah perkalian dari matriks transformasi 2 dengan matriks transformasi 1 (dibalik).
+
+\noindent
+\begin{center}
+\includegraphics{Pictures/18.PNG}\\
+\end{center}
+\noindent
+\begin{enumerate}
+	\item  \textbf{Matriks Transformasi Khusus}
+\end{enumerate}
+\noindent
+Berikut kami rangkumkan matriks tansformasi yang sering digunakan dalam soal-soal. Matriks di bawah ini juga akan memudahkan sobat untuk mencari matriks dari komposisi dua atau lebih transformasi.
+
+\noindent
+\begin{center}
+\includegraphics{Pictures/19.PNG}\\
+\end{center}
+
+\textbf{Contoh Soal 1}
+\noindent Titik A(5,-2) ditranslasi oleh  T (-3, 1). Tentukan koordinat bayangan titik A tersebut!\\
+
+A. A’(2,1)\\
+
+B. A’(1,1)\\
+
+C. A’(2,2)\\
+
+D. A’(2,-1)\\
+
+E. A’(-2,1)\\
+
+Pembahasan :
+
+\noindent
+\begin{center}
+\includegraphics{Pictures/28.jpg}\\
+\end{center}
+
+\textbf{Contoh Soal 2}
+\noindent Tentukan bayangan garis y = 3x – 5 oleh translasi T (-2, 1)!
+
+A. y = 2x + 2\\
+
+B. y = 2x – 2\\
+
+C. y = 3x + 2\\
+
+D. y = 3x – 2\\
+
+E. y = 2x + 3\\
+
+\noindent
+\begin{center}
+\includegraphics{Pictures/29.jpg}\\
+\end{center}
+
+\textbf{Contoh Soal 3}
+\noindent Tentukan bayangan titik (5, -3) oleh rotasi R(P, 90) dengan koordinat titik P(-1, 2)!
+
+A. (8, 4)\\
+
+B. (-8, 4)\\
+
+C. (8, -4)\\
+
+D. (-4,- 8)\\
+
+E. (4, 8)\\
+
+Pembahasan :\\
+
+\noindent
+\begin{center}
+\includegraphics{Pictures/30.jpg}\\
+\end{center}
+ \textbf{Contoh Soal 4}
+\noindent Tentukan bayangan titik (9, 3) oleh dilatasi [O, 1/3]!
+
+A. (1, 3)\\
+
+B. (3, 1)\\
+
+C. (-1, -3)\\
+
+D. (3, -1)\\
+
+E. (1, -3)\\
+
+Pembahasan:\\
+
+\noindent
+\begin{center}
+\includegraphics{Pictures/31.jpg}\\
+\end{center}
+
+ \textbf{Contoh Soal 5}
+\noindent Tentukan bayangan garis 3x + 4y – 5 = 0 oleh dilatasi dengan pusat (-2, 1) dan faktor skala 2!
+
+A. 3x + 4y + 12 = 0 \\
+
+B. 3x + 4y – 12 = 0 \\
+
+C. 3x – 4y + 12 = 0\\
+
+D. -3x + 4y + 12 = 0\\
+
+E. 3x – 4y – 12 = 0\\
+
+Pembahasan :\\
+
+\noindent
+\begin{center}
+\includegraphics{Pictures/32.jpg}\\
+\end{center} 
+
 %----------------------------------------------------------------------------------------
 %	CHAPTER 6
 %----------------------------------------------------------------------------------------
@@ -386,6 +884,171 @@ Definition of word.
 \chapter{Barisan dan Deret}
 
 \section{Pola Bilangan}\index{Pola Bilangan}
+\begin{center}
+	\LARGE \textbf{Pola Bilangan}
+\end{center}
+\noindent
+Berawal dari tugas matematika di sekolah oleh guru matemtika yang memberi tugas untuk mencari pola – pola bilangan matematika, maka pada kesempatan kali ini saya akan membagikan beberapa jenis pola bilangan matematika. Tanpa panjang lebar, langsung saja kita ke pembahasannya.\\
+\noindent
+\begin{enumerate}
+	\item  \textbf{Pola bilangan ganjil}
+\end{enumerate}
+\noindent
+\begin{center}
+	\noindent \includegraphics*[width=2.32in, height=1.48in, keepaspectratio=false, trim=0.00in 0.11in 0.00in 0.00in]{Pictures/21.PNG}
+\end{center}
+\noindent
+\noindent Pola bilangan ganjil memiliki pola 1, 3, 5, 7, 9 ….\\
+\noindent bilangan ganjil adalah 1,3, 5, 7, 9, …\\
+\noindent Deret bilangan ganjil adalah 1 + 3 + 5 + 7 + 9 + ….\\
+\noindent Rumus mencari suku ke ke-n adalah Un = 2n – 1\\
+\noindent Rumus mencari jumlah n suku pertama adalah Sn = n2\\
+\noindent Berikut adalah gambar pola dari bilangan ganjil\\
+
+\noindent
+\begin{enumerate}
+	\item  \textbf{ Pola bilangan genap}
+\end{enumerate}
+\noindent
+\begin{center}
+	\noindent \includegraphics*[width=2.32in, height=1.48in, keepaspectratio=false, trim=0.00in 0.11in 0.00in 0.00in]{Pictures/22.PNG}
+\end{center}
+
+\noindent
+\noindent Pola bilangan genap adalah 2, 4, 6, 8, 10, …..\\
+\noindent Barisan bilangan genap adalah 2, 4, 6, 8, 10, ….\\
+\noindent bilangan genap adalah 2 + 4 + 6 + 8 + 10 + …..\\
+\noindent Rumus untuk mencari suku ke-n adalah Un = 2n\\
+\noindent Rumus mencari jumlah n suku pertama adalah Sn = n2 + n\\
+\noindent Gambar pola bilangan genap adalah sebagai berikut\\
+\begin{enumerate}
+	\item  \textbf{  Pola bilangan segitiga}
+\end{enumerate}
+\noindent
+\begin{center}
+	\noindent \includegraphics*[width=2.32in, height=1.48in, keepaspectratio=false, trim=0.00in 0.11in 0.00in 0.00in]{Pictures/23.JPG}
+\end{center}
+\noindent
+\noindent Pola bilangan segitiga adalah 1, 3, 6, 10, 15, 21, …..\\
+\noindent Barisan bilangan segitiga adalah 1, 3, 6, 10, 15, 21, …..\\
+\noindent Deret bilangan segitiga adalah 1 + 3 + 6 + 10 + 15 + 21 + …..\\
+\noindent Rumus mencari suku ke-n adalah Un = 1/2 n (n + 1 ).\\
+\noindent Rumus mencari jumlah n suku pertama adalah Sn = 1/6 n ( n + 1 ) ( n + 2 ).\\
+\noindent Gambar pola bilangan segitiga adalah sebagai berikut.\\
+
+\noindent
+\begin{enumerate}
+	\item  \textbf{ Pola bilangan Persegi}
+\end{enumerate}
+\noindent
+\begin{center}
+	\noindent \includegraphics*[width=2.32in, height=1.48in, keepaspectratio=false, trim=0.00in 0.11in 0.00in 0.00in]{Pictures/24.PNG}
+\end{center}
+\noindent
+\noindent$\bullet$  Pola bilangan persegi adalah 1, 4, 9, 16, 25, …..\\
+\noindent $\bullet$ Barisan bilangan persegi adalah 1, 4, 9, 16, 25, …..\\
+\noindent$\bullet$ Deret bilangan persegi adalah 1 + 4 + 9 + 16 + 25 + …….\\
+\noindent$\bullet$ Rumus mencari suku ke-n adalah Un = n2.\\
+\noindent $\bullet$ Rumus mencari jumlah n suku pertama adalah Sn = 1/6 n ( n + 1 ) ( 2n + 1 ).\\
+\noindent $\bullet$ Gambar pola bilangan persegi adalah sebagai berikut.\\
+
+\noindent
+\begin{enumerate}
+	\item  \textbf{ Pola bilangan persegi panjang}
+\end{enumerate}
+\noindent
+\begin{center}
+	\noindent \includegraphics*[width=2.32in, height=1.48in, keepaspectratio=false, trim=0.00in 0.11in 0.00in 0.00in]{Pictures/25.PNG}
+\end{center}
+\noindent
+\noindent  $\bullet$ Pola bilangan persegi panjang adalah 2, 6, 12, 20, 30, …….\\
+\noindent  $\bullet$ Barisan bilangan persegi panjang adalah 2, 6, 12, 20, 30, …….\\
+\noindent $\bullet$  Deret bilangan persegi panjang adalah 2 + 6 + 12 + 20 + 30 + …..\\
+\noindent  $\bullet$ Rumus mencari suku ke-n adalah Un = n ( n + 1 ).\\
+\noindent $\bullet$  Rumus mencari jumlah n suku pertama adalah Sn = 1/3 n ( n + 1 ) ( n + 2 ).\\
+\noindent $\bullet$  Gambar pola bilangan persegi panjang adalah sebagai berikut.\\
+\noindent
+\begin{enumerate}
+	\item  \textbf{ Pola bilangan segitiga pascal}
+\end{enumerate}
+\noindent
+\begin{center}
+	\noindent \includegraphics*[width=2.32in, height=1.48in, keepaspectratio=false, trim=0.00in 0.11in 0.00in 0.00in]{Pictures/26.PNG}
+\end{center}
+\noindent
+\noindent Rumus mencari jumlah baris ke-n adalah 2n – 1
+\\
+\begin{enumerate}
+	\item  \textbf{  Pola bilangan Fibonacci}
+\end{enumerate}
+
+\noindent $\bullet$ Pola bilangan fibanocci adalah pola bilangan dimana jumlah bilangan setelahnya merupakan hasil dari penjumlahan dari dua bilangan sebelumnya.\\
+\noindent$\bullet$ Pola bilangan Fibonacci adalah 1, 1, 2, 3, 5, 8, 13, 21, 34, …..\\
+\noindent $\bullet$ 2 diperoleh dari hasil 1 + 1 3 diperoleh dari hasil 2 + 1, 5 diperoleh dari hasil 3 + 2 dan seterusnya.\\
+\noindent  $\bullet$ Rumus mencari suku ke-n adalah Un = Un – 1 + Un - 2.\\
+
+\noindent
+\begin{enumerate}
+	\item  \textbf{  Pola bilangan pangkat tiga}
+\end{enumerate}
+\noindent
+\noindent $\bullet$ Pola bilangan pangkat tiga adalah pola bilangan dimana bilangan setelahnya merupakan hasil dari pangkat tiga dari bilangan sebelumnya.\\
+\noindent $\bullet$ Contoh pola bilangan pangkat tiga adalah 2, 8, 512, 134217728, …..\\
+\noindent  $\bullet$ Keterangan : 8 diperoleh dari hasil 2 pangkat tiga, 512 diperoleh dari hasil 8 pangkat tiga, dan seterusnya.\\
+
+\noindent
+\begin{enumerate}
+	\item  \textbf{  Pola bilangan aritmatika}
+\end{enumerate}
+\noindent
+\noindent$\bullet$ Pola bilangan aritmatika adalah pola bilangan dimana bilangan sebelum dan sesudahnya memiliki selisih yang sama.\\
+\noindent $\bullet$ Contoh pola bilangan aritmatika adalah 2, 5, 8, 11, 14, 17, ….\\
+\noindent $\bullet$ Suku pertama dalam bilangan aritmatika dapat disebut dengan awal ( a ) atau U1, sedangkan suku kedua adalah U2 dan seterusnya.\\
+\noindent $\bullet$ Selisih dalam barisan aritmatika disebut dengan beda dan dilambangkan dengan b.\\
+\noindent $\bullet$ Karena bilangan sebelum dan sesudahnya memiliki selisih yang sama, maka b = U2 - U1 = U3 – U2 = U4 – U3 = U5 – U4 = U6 – U5 = 3.\\
+\noindent $\bullet$ Rumus mencari suku ke-n adalah Un = a + ( n – 1 ) b.\\
+\noindent $\bullet$ Rumus mencari jumlah n suku pertama adalah Sn = n/2 ( a + Un ) atau Sn = n/2 ( 2 a + ( n – 1 ) b ).\\
+\noindent
+
+\textbf {Contoh soal :} 
+\noindent Tentukanlah jumlah 7 bilangan asli ganjil yang pertama !\\
+
+\textbf {jawab :}
+\noindent ketujuh bilangan tersebut adalah : 1, 3, 5, 7, 9, 11, 13. jadi n=7\\
+\noindent $\blacktriangleright$ jumlah ke-7 bilangan tersebut adalah 72=49\\
+\noindent $\blacktriangleright$ untuk membuktikan silahkan dihitung manual 1+3+5+7+9+11+13=...?\\
+
+\textbf {Contoh 2 pola bilangan}
+\noindent Berapakah banya bilangan asli ganjil yang jumlahnya 81 ?\\
+
+\textbf {jawab :}
+\noindent Kita telah mengetahui bahwa jumlah bilangan asli ganjil yaitu banyaknya bilangan asli ganjil dikuadratkan secara sederhana dapat kita tuliskan n2 dari pertanyaan diatas dapat kita simpulkan bahwa
+n2=81, maka\\
+n = $\surd$81\\
+n = 9, jadi banyaknya bilangan ganjil adalah 9.\\
+
+\textbf {Contoh Soal Pola Bilangan Genap}
+\noindent Selain bilangan ganjil, bilangan genap juga termasuk anggota dari bilangan asli yaitu {2, 4, 6, 8, ...}\\
+
+Perhatikan susunan heksagonal seperti pada gambar berikut :\\
+\noindent
+\begin{center}
+\includegraphics{Pictures/27.jpg}\\
+\end{center}
+
+\noindent pola bilangan matematika - pola heksagonal\\
+\noindent  Gambar diatas menunjukkan bahwa heksagonal yang terdiri sebanyak bilangan genap dapat disusun membentuk pola tertentu. sehingga gambar diatas bisa disebut sebagai pola bilangan genap.\\
+
+\noindent Untuk lebih memahami perhatikan uraian penjumlahan bilangan asli genap berikut :\\
+Penjumlahan dari 2 bilangan genap :
+2 + 4 = 6, n=2 dapat ditulis 6 = 2 (2+1)\\
+penjumlahan 3 bilangan genap :
+2 + 4 + 6 = 12, n=3 dapat ditulis 12 = 3 ( 3+1)\\
+penjulahan 4 bilangan genap :
+2 + 4 + 6 + 8 = 20, n=4 dapat ditulis 20 = 4 (4+1)\\
+
+dari pola di atas seharusnya anda sudah dapat menarik kesimpulan rumus jumlah pola bilangan genap, ya benar rumusnya adalah ns = n ( n + 1 )\\
+
 
 \section{Barisan dan Deret Aritmatika}\index{Barisan dan Deret Aritmatika}
 Pengertian Barisan Aritmatika
@@ -409,6 +1072,35 @@ U6 = u5 + b = (a + 4b) + b = a + 5b
 U7 = u6 + b = (a + 5b) + b = a + 6b
 .
 \section{Barisan dan Deret Geometri}\index{Barisan dan Deret Geometri}
+\textbf{Pengertian dan Rumus Geometri}
+
+Barisan Geometri dapat didefinisikan sebagai barisan yang tiap-tiap sukunya didapatkan dari hasil perkalian suku sebelumnya dengan sebuah konstanta tertentu.
+
+\textbf{Contoh Barisan Geometri}
+
+ untuk lebih memahami apa yang dimaksud dengan barisan geometri perhatikan contoh berikut:
+ 
+\textbf{3, 9, 27 , 81, 243, ...}
+
+Barisan di atas adalah contoh barisan geometri dimana setiap suku pada barisan tersebut merupakan hasil dari perkalian suku sebelumnya dengan konstanta 3. maka bisa disimpulkan bahwa rasio pada barisan di atas adalah 3. rasio pada suatu barisan dapat dirumuskan menjadi:
+
+\textbf{r = ak+1/ak}
+
+Dimana ak adalah sembarang suku dari barisan geometri yang ada. sementara ak+1 adalah suku selanjutnya setelah ak.
+
+Untuk menentukan suku ke-n dari sebuah barisan geometri, kita dapat menggunakan rumus:
+
+\textbf{$Un = ar^n-1$}
+
+\textbf{ Pengertian dan Rumus deret Geometri}
+
+Deret geometri dapat diartikan sebagai jumlah dari n suku pertama pada sebuah barisan geometri. apabila suku ke-n dari suatu barisan geometri digambarkan dengan rumus: an = a1rn-1, maka deret geometrinya dapat dijabarkan menjadi:
+
+\textbf{$Sn = a1 + a1r + a1r^2 + a1r^3 + ... + a1r^n-1$}
+
+Apabila kita mengalikan deret geometri di atas dengan -r, lalu kita jumlahkan hasilnya dengan deret aslinya, maka kita akan memperoleh:
+
+\includegraphics[width = 10cm, height= 4cm]{geometri1.png} 
 
 %----------------------------------------------------------------------------------------
 %	PART
@@ -458,9 +1150,334 @@ Treatment 3 & 0.0009271 & 0.296 \\
 \chapter{Turunan Fungsi Aljabar}
 
 \section{Pengertian Turunan}\index{Pengertian Turunan}
+\begin{center}
+\LARGE \textbf{Turunan}
+\end{center}
+
+\noindent
+Secara umum turunan banyak digunakan dalam kehidupan sehari-hari atau dalam bidang ilmu lainnya. Karena setiap bidang ilmu pasti saling terkait atau saling membutuhkan. Kegunaan yang sering kita ketahui itu menghitung garis singgung suatu kurva atau fungsi dan kecepatan sesaat. Selain itu juga digunakan untuk laju pertumbuhan organisme (biologi), keuntungan marjinal (ekonomi), kepadatan kawat (fisika) dan laju pemisahan (kimia). Kegunaan semua yang telah disebut diatas adalah memiliki konsep yang sama, yaitu konsep turunan.
+
+\noindent
+\begin{enumerate}
+\item \textbf{Pengertian Turunan }
+\end{enumerate}
+
+\noindent 
+Turunan merupakan salah satu dasar atau fundasi dalam analisis sehingga penguasaan kamu terhadap berbagai konsep dan prinsip turunan fungsi membantu kamu memecahkan suatu permasalahan dalam kehidupan sehari-hari. Suatu fungsi dapat dianalisis berdasarkan ide naik/turun, keoptimalan dan titik beloknya dengan menggunakan konsep turunan. Pada bagian berikut, kita akan mencoba mengamati berbagai permasalahan nyata dan mempelajari beberapa kasus dan contoh untuk menemukan konsep turunan. Kita memulainya dengan menemukan konsep persamaan garis tangen/singgung.
+
+\noindent 
+\begin{enumerate}
+\item \textbf{Menemukan Konsep Garis Sekan dan Garis Tangen}
+\end{enumerate}
+
+\noindent 
+Coba kamu amati dan cermati berbagai masalah nyata yang diajukan, bermanfaat sebagai sumber abstraksi kita dalam menemukan konsep dan hubungan antara garis sekan atau tali busur dan garis singgung.\\
+
+\noindent 
+\textbf{Masalah:}
+
+\noindent 
+Seorang pemain ski meluncur kencang di permukaan es yang bergelombang. Dia meluncur turun kemudian naik mengikuti lekukan permukaan es sehingga di suatu saat, dia melayang ke udara dan turun kembali ke permukaan. Perhatikan Gmbar di bawah ini.
+
+\noindent
+\begin{center}
+\noindent \includegraphics*[width=1.90in, height=1.90in, keepaspectratio=false, trim=0.00in 0.11in 0.00in 0.00in]{Pictures/TurunanFungsi1.JPG}\\
+\end{center}
+
+\noindent 
+Secara analitik, misalkan bahwa bukit es disketsa pada bidang (dimensi dua) dengan sudut pandang tegak lurus ke depan sehingga terdapat garis dan papan ski adalah sebuah garis lurus. Dapatkah kamu tunjukkan hubungan kedua garis tersebut?\\
+
+\noindent 
+\textbf{Alternatif Penyelesaian}
+
+\noindent 
+Coba kamu amati gambar di bawah ini. Misalkan deskripsi permasalahan di atas ditampilkan dalam bentuk gambar berikut. 
+
+\noindent
+\begin{center}
+\noindent \includegraphics*[width=2.90in, height=2.19in, keepaspectratio=false, trim=0.00in 0.11in 0.00in 0.00in]{Pictures/TurunanFungsi2.JPG}
+\end{center}
+
+\noindent 
+Posisi tegak pemain terhadap papan ski adalah sebuah garis yang disebut garis normal. Papan ski yang menyinggung permukaan bukit es di saat melayang ke udara adalah sebuah garis yang menyinggung kurva disebut garis singgung. Jadi, garis singgung tegak lurus dengan garis normal. Tujuan kita adalah mendapatkan persamaan garis singgung (PGS).
+
+\noindent 
+Misalkan pemain ski mulai bergerak dari titik Q(x2, y2) dan melayang ke udara pada saat titik P(x1, y1) sehingga ia akan bergerak dari titik Q mendekati titik P. Garis yang menghubungkan kedua titik disebut garis tali busur atau garis sekan.
+
+\noindent 
+Sepanjang pergerakan tersebut, terdapat banyak garis seakan yang dapat dibentuk dari titik Q menuju titik P dengang gradient awal.\\
+
+\noindent 
+Perhatikan gambar di bawah. Gradien garis sekan mendekati gradient garis singgung.
+
+\noindent 
+\begin{center}
+\noindent \includegraphics*[width=2.90in, height=2.19in, keepaspectratio=false, trim=0.00in 0.11in 0.00in 0.00in]{Pictures/TurunanFungsi3.JPG}\\
+\end{center}
+
+\noindent 
+Perhatikan gambar garis sekan dan garis tangen(singgung) berikut ini.
+
+\noindent 
+\begin{center}
+\noindent \includegraphics*[width=2.95in, height=2.25in, keepaspectratio=false, trim=0.00in 0.11in 0.00in 0.00in]{Pictures/TurunanFungsi4.JPG}
+\end{center}
+
+\noindent 
+Pada gambar A, garis sekan yang melalui titik A dan titik B memiliki gradient (kemiringan garis) yang disimbolkan m.
+
+\noindent 
+Jika Ax nilainya semakin kecil, maka garis sekan (gambar A) akan membentuk garis singgung seperti gambar B, sehingga diperoleh gradien garis singgung di titik A dengan syarat nilai limitnya ada.\\
+
+
+\noindent 
+\textbf{Definisi :}
+
+\noindent 
+Turunan fungsi f adalah fungsi lain f’ (dibaca : f aksen)  yang nilainya pada sebarang bilangan c adalah :
+
+\noindent 
+\begin{center}
+\noindent \includegraphics*[width=3.90in, height=1.21in, keepaspectratio=false, trim=0.00in 0.11in 0.00in 0.00in]{Pictures/TurunanFungsi5.JPG}
+\end{center}
+
+\noindent 
+\begin{enumerate}
+\item \textbf{Menemukan Konsep Garis Sekan dan Garis Tangen}
+\end{enumerate}
+
+\noindent 
+Kita telah menemukan konsep garis singgung grafik suatu fungsi dan hubungannya dengan garis sekan dan garis normal. Berikutnya, kita akan mempelajari lebih dalam lagi konsep garis singgung grafik suatu fungsi tersebut untuk mendapatkan konsep turunan.\\
+
+\noindent 
+Coba kamu perhatikan dan amati kembali sketsa kurva pada Gambar gradien garis sekan mendekati gradient garis singgung, maka titik Q akan bergerak mendekati P untuk Ax makin kecil. Gradien garis singgung di titik P disebut turunan fungsi pada titik P.\\
+
+\noindent 
+Perlu diinformasikan, penulisan simbol turunan dapat berbeda-beda. Beberapa symbol turunan yang sering dituliskan adalah:
+
+\noindent 
+Notasi Newton = f'(x)  atau  y'  turunan pertama fungsi
+
+\noindent 
+Notasi Leibniz = df(x)/dx  atau  dy/dx  turunan pertama fungsi\\
+
+\noindent 
+\textbf{Masalah:}
+
+\noindent
+Seekor burung camar terbang melayang di udara dan melihat seekor ikan di permukaan laut. Burung tersebut terbang menukik dan menyambar ikan kemudian langsung terbang ke udara. Lintasan burung mengikuti pola fungsi f(x) = |x|. Dapatkah kamu sketsa grafik tersebut. Coba amati dan teliti dengan cermat turunan fungsi tersebut pada titik O(0,0).\\
+	 
+\noindent 
+\textbf{Alternatif Penyelesaian}
+
+\noindent 
+Ingat kembali pelajaran nilai mutlak pada kelas X
+\noindent 
+Misalkan posisi ikan di permukaan laut adalah titik O(0,0) sehingga sketsa permasalahan di atas adalah sebagai berikut (ingat cara meng-gambar kurva f(x) = |x| di kelas X):
+
+\noindent 
+\begin{center}
+\noindent \includegraphics*[width=3.50in, height=2.55in, keepaspectratio=false, trim=0.00in 0.11in 0.00in 0.00in]{Pictures/TurunanFungsi6.JPG}
+\end{center}
+
 
 \section{Sifat-Sifat Turunan Fungsi Aljabar}\index{Sifat-Sifat Turunan Fungsi Aljabar}
 
+\noindent
+\begin{enumerate}
+\item \textbf{Turunan Fungsi Aljabar}
+\end{enumerate}
+
+\noindent 
+Turunan fungsi aljabar merupakan pembahasan lebih jauh dari limit fungsi. Dengan kata lain turunan fungsi merupakan fungsi tertentu dimana nilai fungsi di setiiap titik ditentukan dengan limit selisih fungsi.
+
+\noindent 
+Secara umum dijelaskan sebagai berikut.  Jika dipunyai fungsi f(x) dan turunan f'(x), kedua fungsi tersebut tersebut mempunyai hubungan, jika dipunyai fungsi f(x) fungsi aljabar diperoleh dasar turunan sebagai berikut.
+
+\noindent 
+f(x) = x(n), maka f'(x) = nx(n-1)
+f(x) = ax(n), maka f'(x) = anx(n-1)
+
+
+\noindent
+\begin{enumerate}
+\item \textbf{Turunan Fungsi Aljabar}
+\end{enumerate}
+
+\noindent 
+\noindent \textbf{a. Turunan fungsi konstan}
+
+\noindent 
+Fungsi konstan adalah fungsi dengan bentuk f(x) = n dengan n = bilangan real. Turunan fungsi konstan menggunakan limit fungsi adalah sebagai berikut.
+
+\noindent 
+\begin{center}
+\includegraphics*[width=1.90in, height=1.35in]{Pictures/TurunanFungsi7.png}
+\end{center}
+
+\noindent 
+Jadi, turunan fungsi yang berbentuk nilai konstan adalah 0.
+
+\noindent 
+Jika diketahui f(x) = n, dengan n bilangan real, maka f'(x) = 0\\
+
+\noindent
+
+\noindent 
+\noindent \textbf{b. Turunan fungsi identitas}
+
+\noindent 
+Fungsi identitas adalah fungsi dengan bentuk f(x) = x. Turunan fungsi identitas menggunakan limit fungsi adalah sebagai berikut.
+
+\noindent 
+\begin{center}
+\includegraphics*[width=1.90in, height=1.35in]{Pictures/TurunanFungsi8.png}
+\end{center}
+
+\noindent 
+Jadi, turunan fungsi identitas adalah 1.
+
+\noindent 
+Jika diketahui f(x) adalah sebuah fungsi identitas atau f(x) = x, maka f'(x) = 1\\
+
+\noindent 
+\noindent \textbf{c. Turunan fungsi pangkat}
+
+\noindent 
+Misalkan diketahui fungsi pangkat dengan bentuk f(x) = xn dengan n bilangan bulat positif. Untuk menentukan rumus umumnya, kita dapat mencari pola dari hasil yang diperoleh melalui tabel berikut.
+
+\noindent 
+\begin{center}
+\includegraphics*[width=2.90in, height=1.35in]{Pictures/TurunanFungsi9.png}
+\end{center}
+
+\noindent 
+Sekarang, kita tentukan dahulu turunan fungsi untuk n = 2.
+
+\noindent 
+\begin{center}
+\includegraphics*[width=1.90in, height=1.35in]{Pictures/TurunanFungsi10.png}
+\end{center}
+
+\noindent 
+Kita masukkan hasilnya ke dalam tabel berikut ini.
+
+\noindent 
+\begin{center}
+\includegraphics*[width=2.90in, height=1.35in]{Pictures/TurunanFungsi11.png}
+\end{center}
+
+\noindent 
+Coba kalian perhatikan tabel di atas. Dari tabel tersebut, dapat terlihat pola yang terbentuk sehingga diperoleh kesimpulan.\\
+
+\noindent 
+\noindent \textbf{d. Turunan fungsi kelipatan konstan}
+
+\noindent 
+Jika  k  suatu konstanta dan  f  suatu fungsi yang terdiferensial maka 
+\noindent 
+(kf)' = k f'(x)  yakni  Dx[k f(x)]  =  k Dx[f(x)]\\
+
+\noindent 
+\noindent \textbf{e. Turunan fungsi jumlah}
+
+\noindent 
+Jika  f  dan  g  fungsi-fungsi yang terdiferensial maka 
+
+\noindent 
+(f+g)(x )= f(x)+g(x)  yakni  Dx[f(x)+g(x)] = Dx[f(x)]+ Dx[g(x)]\\
+
+\noindent 
+\noindent \textbf{f. Turunan fungsi selisih}
+
+\noindent 
+Jika  f  dan  g  fungsi-fungsi yang terdiferensial maka
+
+\noindent 
+(f-g)(x) = f(x) – g(x)   yaitu  Dx[f(x) – g(x)] = Dx[f(x)] – Dx[g(x)]\\
+
+\noindent 
+\noindent \textbf{g. Turunan fungsi hasil kali}
+
+\noindent 
+Jika f dan g fungsi-fungsi yang terdiferensial maka 
+
+\noindent 
+(f.g)'(x) = f'(x)g(x) + f(x)g'(x)  yakni  Dx[f(x)g(x)] = Dx[f(x)]g(x) + f(x)Dx[g(x)]\\
+
+\noindent 
+\noindent \textbf{h. Turunan fungsi hasil bagi}
+
+\noindent 
+Jika f dan g fungsi-fungsi yang terdiferensial maka turunan dari f(x) adalah :
+\noindent 
+
+\noindent 
+\begin{center}
+\includegraphics*[width=2.25in, height=1.01in]{Pictures/TurunanFungsi12.png}
+\end{center}
+
+\noindent 
+ \\
+ 
+\noindent
+\begin{enumerate}
+\item \textbf{Sifat-Sifat Turunan Fungsi Aljabar }
+\end{enumerate}
+
+\noindent
+Jika diketahui k suatu konstanta, u = u(x),  v = v(x) dan masing-masing mempunyai turunan u'(x) dan v'(x), maka berlaku:
+ 
+
+\noindent
+f(x) = u + v,   maka f'(x) = u' + v'\\ 
+
+\noindent 
+f(x)= u - v,  maka f'(x) = u' - v'\\
+
+\noindent 
+f(x) = uv, maka f'(x) = u'v + uv'\\
+
+\noindent 
+f(x) = f(u), maka f'(x) = f'(u). u'\\
+
+\noindent 
+f(x) = u/v, maka f'(x) = (u'v - uv')/v2\\
+
+\noindent 
+Untuk lebih jelasnya perhatikan beberapa contoh berikut.\\
+
+\noindent
+\textbf{Contoh 1 :}
+
+\noindent
+Tentukan turunan fungsi-fungsi berikut.
+\noindent
+
+\noindent 
+\begin{center}
+\includegraphics*[width=1.90in, height=1.55in]{Pictures/TurunanFungsi13.JPG}
+\end{center}
+
+\noindent
+\textbf{Jawaban:}
+
+\noindent 
+\begin{center}
+\includegraphics*[width=1.90in, height=1.90in]{Pictures/TurunanFungsi14.JPG}
+\end{center}
+
+\noindent 
+Contoh di atas merupakan contoh turunan fungsi dari operasi suku-suku aljabar.
+
+\noindent 
+Nah, bagaimana turunan dari operasi dua fungsi aljabar (f(x)dan g(x)). Misalnya operasi perkalian dan pembagian. Mengapa hanya perkalian dan pembagian?
+
+\noindent 
+Perlu diketahui bahwa pada operasi penjumlahan dan pengurangan pada hakikatnya sama saja dengan operasi di atas.
+ 
+ 
+ 
 \section{Penerapan Turunan Fungsi Aljabar}\index{Penerapan Turunan Fungsi Aljabar}
 
 \section{Nilai-Nilai Stasioner}\index{Nilai-Nilai Stasioner}
@@ -609,6 +1626,140 @@ Lintasan melalui titik O(0,0) dan puncak P3(5,10).
 
 Fungsi lintasan lemparan anak ketiga adalah y = –0,4x2 +
 4x.\\
+<<<<<<< HEAD
+=======
+
+\textbf{c. Interval Fungsi Naik/Turun Fungsi Lintasan}
+
+Coba kamu amati kembali Gambar seketsa lintasan lemparan Secara geometri,jelas kita lihat interval fungsi naik/turun pada masingmasing lintasan, seperti pada tabel berikut:\\
+
+\includegraphics{naikturun14.png}\\
+
+Mari kita tunjukkan kembali interval fungsi naik/turun dengan meng-gunakan konsep turunan yang telah kita pelajari sebelumnya.\\
+
+\textbf{Fungsi naik/turun pada lintasan lemparan anak 1}
+
+Fungsi yang telah diperoleh adalah y = –0,25$x^{2} $+ 3x sehingga y = –0,5$x^{2} $+ 3x. Jadi,
+
+fungsi akan naik: y = –0,5$x^{2} $+ 3x$ \Leftrightarrow $x < 6
+
+fungsi akan turun: y = –0,5x + 3 < 0$ \Leftrightarrow $x > 6
+
+Menurut ilustrasi, batu dilempar dari posisi awal O(0,0) dan jatuh pada posisi akhir Q(12,0) sehingga lintasan lemparan akan naik pada 0 < x < 6 dan turun pada 6 < x < 12.
+
+Bagaimana menunjukkan interval fungsi naik/turun
+dengan konsep turunan pada fungsi lintasan lemparan
+anak 2 dan anak 3 diserahkan kepadamu.
+
+\textbf {Contoh Soal:} 
+Tentukanlah interval fungsi naik/turun fungsi f(x) = $x^{4} $– 2x$^{2}$
+
+\textbf{Alternatif Penyelesaian}
+
+Berdasarkan konsep, sebuah fungsi akan naik jika f '(x) > 0 sehingga:
+
+f '(x) = 4x$^{3} $– 4x > 0$ \Leftrightarrow $4x(x – 1)(x + 1) > 0$ \Leftrightarrow $x = 0 atau x = 1 atau x = –1
+
+Dengan menggunakan interval.
+
+\includegraphics{naikturun15.png}\\
+
+Jadi, kurva fungsi tersebut akan naik pada interval l –1 < x < 0 atau x > 1 tetapi turun pada interval x < –1 atau 0 < x < 1. Perhatikan sketsa kurva f(x) = x$^{4} $– 2x$^{2} $tersebut.\\
+
+\begin{center}
+\includegraphics{naikturun16.png}\\
+Gambar Fungsi naik/turun kurva f(x) = x4 – 2x2
+\end{center}
+
+\subsection{Aplikasi Konsep Turunan dalam
+Permasalahan Maksimum dan Minimum}
+
+Setelah menemukan konsep fungsi naik dan turun,
+kita akan melanjutkan pembelajaran ke permasalahan
+maksimum dan minimum serta titik belok suatu fungsi.
+Tentu saja, kita masih melakukan pengamatan terhadap
+garis singgung kurva. Aplikasi yang akan dibahas adalah permasalahan titik optimal fungsi dalam interval terbuka dan tertutup, titik belok, dan permasalahan kecepatan maupun percepatan.\\
+
+\textbf{1.Menemukan konsep maksimum dan minimum di interval terbuka}
+
+\textbf{Masalah: }
+Seorang anak menarik sebuah tali yang cukup
+panjang. Kemudian dia membuat gelombang dari
+tali dengan menghentakkan tali tersebut ke atas dan
+ke bawah sehingga terbentuk sebuah gelombang
+berjalan. Dia terus mengamati gelombang tali yang
+dia buat. Dia melihat bahwa gelombang tali memiliki
+puncak maksimum maupun minimum. Dapatkah
+kamu menemukan konsep nilai maksimum ataupun
+minimum dari sebuah fungsi?
+
+\textbf{Penyelesaian :}
+Gradien garis singgung adalah tangen sudut yang
+dibentuk oleh garis itu sendiri dengan sumbu x positif atau turunan pertama dari titik singgungnya.
+
+\begin{center}
+\includegraphics{naikturun17.png}\\
+Gambar Sketsa gelombang tali
+\end{center}
+
+Coba kamu amati gambar di atas. Garis singgung
+(PGS 1, PGS 2, PGS 3 dan PGS 4) adalah garis horizontal atau y = c, c konstan, sehingga gradiennya
+adalah m = 0. Keempat garis singgung tersebut menyinggung kurva di titik puncak/optimal, di absis x =$ x_{1}, x = x_{2}, x = x_{3}, dan x = x_{4}$. Dari pengamatan, dapat disimpulkan bahwa sebuah fungsi akan mencapai optimal(maksimum/minimum) pada suatu daerah jika m = f '(x) = 0. Titik yang memenuhi f '(x) = 0 disebut titik stasioner. Berikutnya, kita akan mencoba menemukan hubungan antara titik stasioner dengan turunan kedua fungsi. Pada Gambar sketsa gelombang tali, f '$(x_{1}) = 0, f '(x_{2}) = 0, f '(x_{3}) = 0 dan f '(x_{4}) $= 0. Artinya kurva turunan pertama fungsi melalui sumbu x di titik A($x_{1}, 0), B(x_{2}, 0), C(x_{3}, 0) dan D(x_{4}$, 0).
+
+Coba kamu amati kurva turunan pertama fungsi dan
+garis singgungnya sebagai berikut. Kesimpulan apa
+yang kamu dapat berikan?
+
+\begin{center}
+\includegraphics{naikturun18.png}\\
+Gambar Hubungan garis singgung kurva m = f '(x)
+dengan titik stasioner
+\end{center}
+
+Titik A($x_{1}, y_{1})$ adalah titik maksimum pada Gambar sketsa gelombang tali sehingga titik dengan absis x = x1 adalah titik stasioner karena f '($x_{1})$ = 0. Per-samaan garis singgung kurva dengan gradien M pada fungsi m = f '(x) menyinggung di titik x = $x_{1}$ membentuk sudut di kuadran IV sehingga nilai tangen sudut bernilai negatif. Hal ini mengakibatkan M = m ' = f ''$(x_{1}) $< 0. Dengan kata lain, titik A($x_{1}, y_{1})$ adalah titik maksimum jika f '$(x_{1}) = 0 dan f "(x_{1}$) < 0.
+
+Kesimpulan: Lihat Gambar hubungan garis singgung kurva, misalkan gradien persamaan garis singgung kurva m = f '(x) adalah M sehingga M = m ' = f ''(x) maka hubungan turunan kedua dengan titik stasioner adalah:
+
+\begin{center}
+\includegraphics{naikturun19.png}\\
+Tabel Hubungan turunan kedua fungsi dengan
+titik optimal (stasioner)
+\end{center}
+
+\textbf{Sifat:}Misalkan f adalah fungsi bernilai real yang kontinu
+dan memiliki turunan pertama dan kedua pada $x_{1} \in I$
+sehingga:
+
+1. Jika f '$(x_{1}) = 0 maka titik (x_{1}, f(x_{1}))$disebut stasioner/
+kritis
+
+2. Jika f '$(x_{1}) = 0 dan f "(x_{1}) > 0 maka titk (x1, f(x_{1}))$disebut titik balik minimum fungsi
+
+3. Jika f '$(x_{1}) = 0 dan f "(x_{1}) < 0 maka titik (x1, f(x_{1}))$disebut titik balik maksimum fungsi
+
+4. Jika f ''$(x_{1}) = 0 maka titik (x_{1}, f(x_{1})) $disebut titik belok\\
+
+\textbf{Contoh Soal:}Tentukanlah titik balik fungsi kuadrat f(x) = $x^{2} $– 4x + 3
+
+\textbf{Penyelesaian 1 (Berdasarkan Konsep
+Fungsi Kuadrat)}
+
+Dengan mengingat kembali pelajaran fungsi kuadrat.
+Sebuah fungsi f(x) = $ax^{2} $+ bx + c mempunyai titik balik B(-$\dfrac{b}{2a}$,-$\dfrac{D}{4a}$) dimana fungsi mencapai maksimum untuk a < 0 dan mencapai minimum untuk a > 0 sehingga fungsi
+f(x) = $x^{2}$ – 4x + 3 mempunyai titik balik minimum pada B(-$\dfrac{-4}{2(1)}$,-$\dfrac{(-4)^{2}-4(1)(3)}{4(1)}$=B(2,-1).\\
+
+\textbf{Penyelesaian 2 (Berdasarkan Konsep
+Turunan)}
+
+Dengan menggunakan konsep turunan di atas maka
+fungsi f(x) = $x^{2} $– 4x + 3 mempunyai stasioner: f '(x) = 2x – 4 = 0 atau x = 2 dan dengan mensubstitusi nilai x = 2 ke fungsi y = f(x) = $x^{2} $– 4x + 3 diperoleh y = –1 sehingga titik stasioner adalah B(2, –1). Mari kita periksa jenis keoptimalan fungsi tersebut dengan melihat nilai turunan keduanya pada titik tersebut. f "(x) = 2 atau f "(2) = 2 > 0.
+Berdasarkan konsep, titik tersebut adalah titik minimum. Jadi, titik balik fungsi kuadrat f(x) = $x^{2} $– 4x + 3 adalah minimum di B(2, –1).
+
+\begin{center}
+\includegraphics{naikturun20.png}\\
+Gambar Titik balik fungsi kuadrat f(x) = $x^{2}$ – 4x + 3
+\end{center}
+>>>>>>> d6303637439e249c7e86b5a3a3b60fea7578a1c9
 
 \textbf{c. Interval Fungsi Naik/Turun Fungsi Lintasan}
 
